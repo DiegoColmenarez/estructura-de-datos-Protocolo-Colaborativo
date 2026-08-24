@@ -15,6 +15,17 @@ public class Matrix
     public static int[,] FlipHorizontalMatrix(int[,]matrix) {
         return TransformMatrix(matrix, (value, row,colum) => matrix[matrix.GetLength(0) - 1 - row, colum]);
     }
+    
+    private static int ReduceMatrix(int[,] matrix, int initValue, Func<int, int, int> reduce)
+    {
+        var result = initValue;
+        for (var i = 0; i < matrix.GetLength(0); i++) {
+            for (var j = 0; j < matrix.GetLength(1); j++) {
+                result = reduce(result, matrix[i, j]);
+            }
+        }
+        return result;
+    }
     public static void PrintMatrix(int[,] matrix)
     {
         for (var i = 0; i < matrix.GetLength(0); i++)
