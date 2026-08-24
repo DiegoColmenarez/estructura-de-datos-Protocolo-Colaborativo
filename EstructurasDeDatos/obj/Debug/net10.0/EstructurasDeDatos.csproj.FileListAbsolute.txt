@@ -1,4 +1,0 @@
-/home/hykar/RiderProjects/EstructuraDeDatos/EstructurasDeDatos/obj/Debug/net10.0/EstructurasDeDatos.GeneratedMSBuildEditorConfig.editorconfig
-/home/hykar/RiderProjects/EstructuraDeDatos/EstructurasDeDatos/obj/Debug/net10.0/EstructurasDeDatos.AssemblyInfoInputs.cache
-/home/hykar/RiderProjects/EstructuraDeDatos/EstructurasDeDatos/obj/Debug/net10.0/EstructurasDeDatos.AssemblyInfo.cs
-/home/hykar/RiderProjects/EstructuraDeDatos/EstructurasDeDatos/obj/Debug/net10.0/EstructurasDeDatos.csproj.CoreCompileInputs.cache
