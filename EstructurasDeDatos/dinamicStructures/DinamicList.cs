@@ -9,16 +9,26 @@ public class DinamicList
         {
             result.Add(operation(integerList[i], i));
         }
+
         return result;
     }
-    
+
     public static List<int> ChangeOddNumsList(List<int> integerList)
     {
         return TransformList(integerList, (num, index) => num % 2 == 0 ? num : 0);
     }
-    
+
     public static List<int> MultiplyByIndexList(List<int> integerList)
     {
         return TransformList(integerList, (num, index) => num * index);
+    }
+
+    public static void PrintList(List<int> integerList)
+    {
+        Console.WriteLine("Elementos del arreglo: ");
+        for (var i = 0; i < integerList.Count; i++)
+        {
+            Console.WriteLine("[Indice: " + i + " Valor: " + integerList[i] + "]");
+        }
     }
 }
