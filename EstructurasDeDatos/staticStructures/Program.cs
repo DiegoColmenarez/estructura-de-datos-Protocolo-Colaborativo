@@ -12,9 +12,16 @@ internal static class Program
         
         var arrayOdds = StaticList.ChangeOddNums(arrayInt);
         StaticList.PrintArray(arrayOdds);
+        Console.WriteLine("");
 
         var matrix = new int[,] { { 1,2,3 }, { 4,5,6 }, {7,8,9} };
         
         Matrix.PrintMatrix(matrix);
+        Console.WriteLine("");
+        
+        var matrix2 = Matrix.FlipVerticalMatrix(matrix);
+        Matrix.PrintMatrix(matrix2);
+        Console.WriteLine("");
+        
     }
 }

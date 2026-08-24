@@ -11,6 +11,10 @@ public class Matrix
         }
         return result;
     }
+    
+    public static int[,] FlipVerticalMatrix(int[,]matrix) {
+        return TransformMatrix(matrix, (value, row,colum) => matrix[matrix.GetLength(0) - 1 - row, colum]);
+    }
 
     public static void PrintMatrix(int[,] matrix)
     {
