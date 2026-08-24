@@ -1,12 +1,10 @@
+using System.Dynamic;
+
 namespace EstructurasDeDatos.staticStructures;
 
-public class StaticList
+public class StaticList(int[] arrayNums)
 {
-    private int[] arrayNums;
-    public StaticList(int[] arrayNums)
-    {
-        this.arrayNums = arrayNums;
-    }
+    private int[] arrayNums = arrayNums;
 
     public static void PrintArray(int[] arrayNums)
     {
@@ -16,5 +14,15 @@ public class StaticList
             Console.WriteLine("[indice: " + i + " Valor: " + arrayNums[i] + "]");
         }
     }
-    
+
+    private static int[] TransformArray(int[] arrayNums, Func<int, int, int> operation)
+    {
+        var resultArray = new int[arrayNums.Length];
+        for (int i = 0; i < arrayNums.Length; i++)
+        {
+            resultArray[i] = operation(arrayNums[i], i);
+        }
+
+        return resultArray;
+    }
 }
