@@ -37,6 +37,18 @@ public class Matrix
             Console.WriteLine();
         }
     }
+    public static void PrintByColumn(int[,] matrix)
+    {
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            Console.Write("Columna " + j + ": ");
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                Console.Write(matrix[i, j] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
     public static int SumAllValues(int[,] matrix)
     {
         return ReduceMatrix(matrix, 0, (accumulator, curretValue) => accumulator += curretValue);

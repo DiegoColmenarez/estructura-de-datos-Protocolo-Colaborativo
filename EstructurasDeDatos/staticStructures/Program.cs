@@ -18,6 +18,8 @@ internal static class Program
         
         Matrix.PrintMatrix(matrix);
         Console.WriteLine("");
+        Matrix.PrintByColumn(matrix);
+        Console.WriteLine("");
         
         var matrix2 = Matrix.FlipHorizontalMatrix(matrix);
         Matrix.PrintMatrix(matrix2);
