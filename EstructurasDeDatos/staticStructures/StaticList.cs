@@ -25,4 +25,9 @@ public class StaticList(int[] arrayNums)
 
         return resultArray;
     }
+
+    public static int[] MultiplyArrayByIndex(int[] arrayNums)
+    {
+        return TransformArray(arrayNums, (value, index) => index * value);
+    }
 }
