@@ -16,4 +16,9 @@ public class DinamicList
     {
         return TransformList(integerList, (num, index) => num % 2 == 0 ? num : 0);
     }
+    
+    public static List<int> MultiplyByIndexList(List<int> integerList)
+    {
+        return TransformList(integerList, (num, index) => num * index);
+    }
 }
