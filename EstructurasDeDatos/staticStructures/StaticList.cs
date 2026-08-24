@@ -30,7 +30,7 @@ public class StaticList(int[] arrayNums)
         return TransformArray(arrayNums, (value, index) => index * value);
     }
 
-    public static int[] ChangeOddNums(int[] arrayNums, Func<int, int, int> operation)
+    public static int[] ChangeOddNums(int[] arrayNums)
     {
         return TransformArray(arrayNums, (value, index) => value % 2 == 0 ? value : 0);
     }
