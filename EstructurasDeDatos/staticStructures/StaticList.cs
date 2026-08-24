@@ -1,4 +1,3 @@
-using System.Dynamic;
 
 namespace EstructurasDeDatos.staticStructures;
 
@@ -18,7 +17,7 @@ public class StaticList(int[] arrayNums)
     private static int[] TransformArray(int[] arrayNums, Func<int, int, int> operation)
     {
         var resultArray = new int[arrayNums.Length];
-        for (int i = 0; i < arrayNums.Length; i++)
+        for (var i = 0; i < arrayNums.Length; i++)
         {
             resultArray[i] = operation(arrayNums[i], i);
         }
@@ -29,5 +28,10 @@ public class StaticList(int[] arrayNums)
     public static int[] MultiplyArrayByIndex(int[] arrayNums)
     {
         return TransformArray(arrayNums, (value, index) => index * value);
+    }
+
+    public static int[] ChangeOddNums(int[] arrayNums, Func<int, int, int> operation)
+    {
+        return TransformArray(arrayNums, (value, index) => value % 2 == 0 ? value : 0);
     }
 }
