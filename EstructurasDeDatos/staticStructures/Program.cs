@@ -23,5 +23,6 @@ internal static class Program
         Matrix.PrintMatrix(matrix2);
         Console.WriteLine("");
         
+        Console.WriteLine(Matrix.SumAllValues(matrix));
     }
 }

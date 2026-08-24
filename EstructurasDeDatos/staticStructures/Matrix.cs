@@ -37,4 +37,8 @@ public class Matrix
             Console.WriteLine();
         }
     }
+    public static int SumAllValues(int[,] matrix)
+    {
+        return ReduceMatrix(matrix, 0, (accumulator, curretValue) => accumulator += curretValue);
+    }
 }
