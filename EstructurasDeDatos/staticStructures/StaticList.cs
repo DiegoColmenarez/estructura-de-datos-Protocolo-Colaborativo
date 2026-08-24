@@ -14,6 +14,14 @@ public class StaticList(int[] arrayNums)
         }
     }
 
+    public static void PrintArrayForLoop(int[] arrayNums)
+    {
+        foreach (var nums in arrayNums)
+        {
+            Console.WriteLine(string.Join(", ", arrayNums));
+        }
+    }
+
     private static int[] TransformArray(int[] arrayNums, Func<int, int, int> operation)
     {
         var resultArray = new int[arrayNums.Length];
