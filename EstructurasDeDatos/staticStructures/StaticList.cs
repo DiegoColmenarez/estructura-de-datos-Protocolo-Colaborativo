@@ -1,10 +1,8 @@
 
 namespace EstructurasDeDatos.staticStructures;
 
-public class StaticList(int[] arrayNums)
+public class StaticList()
 {
-    private int[] arrayNums = arrayNums;
-
     public static void PrintArray(int[] arrayNums)
     {
         Console.WriteLine("Numeros en el arreglo:");
