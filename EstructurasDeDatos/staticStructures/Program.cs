@@ -1,3 +1,5 @@
+using EstructurasDeDatos.dinamicStructures;
+
 namespace EstructurasDeDatos.staticStructures;
 
 internal static class Program
@@ -26,5 +28,12 @@ internal static class Program
         Console.WriteLine("");
         
         Console.WriteLine(Matrix.SumAllValues(matrix));
+
+        var list = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        var list2 = DinamicList.ChangeOddNumsList(list);
+        var list3 = DinamicList.MultiplyByIndexList(list);
+        DinamicList.PrintList(list);
+        DinamicList.PrintList(list2);
+        DinamicList.PrintList(list3);
     }
 }
