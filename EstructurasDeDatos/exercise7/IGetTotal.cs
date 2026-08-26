@@ -2,5 +2,5 @@ namespace EstructurasDeDatos.exercise7;
 
 public interface IGetTotal
 {
-    List<Product> GetTotal(List<SalesLine> salesLineList);
+    long GetTotal(List<SalesLine> salesLineList);
 }

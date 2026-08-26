@@ -7,8 +7,8 @@ public class Calculator : IGetBestSelling, IGetTotal
         throw new NotImplementedException();
     }
 
-    public List<Product> GetTotal(List<SalesLine> salesLineList)
+    public long GetTotal(List<SalesLine> salesLineList)
     {
-        throw new NotImplementedException();
+        return salesLineList.Sum(line => line.LineTotal);
     }
 }
