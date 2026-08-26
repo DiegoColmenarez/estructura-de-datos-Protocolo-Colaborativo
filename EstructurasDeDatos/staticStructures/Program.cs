@@ -55,6 +55,11 @@ internal static class Program
         
         Console.WriteLine(calculator.GetTotal(salesLines)/100);
         Console.WriteLine("productos o producto más vendido: \n" + bestSellers[0].Name + "\n"+ bestSellers[1].Name);
-        
+
+        foreach (var sales in salesLines)
+        {
+            var salesLineTotal = sales.LineTotal/100;
+            Console.WriteLine(sales.Product.Name + ": " + salesLineTotal);
+        }
     }
 }
