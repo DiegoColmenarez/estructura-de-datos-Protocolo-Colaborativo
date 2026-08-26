@@ -5,7 +5,7 @@ public class Calculator : IGetBestSelling, IGetTotal
     public List<Product> GetBestSelling(List<SalesLine> salesLineList)
     {
         var result = new List<Product>();
-       /* var maxSales = -1;
+       var maxSales = -1;
     
         foreach (var line in salesLineList)
         {
@@ -19,8 +19,7 @@ public class Calculator : IGetBestSelling, IGetTotal
             {
                 result.Add(line.Product);
             }
-        } */
-    
+        } 
         return result;
     }
 
