@@ -22,6 +22,13 @@ def reduce_matrix(matrix, init_value, reduce_func):
                 result = reduce_func(result, matrix[i][j])
         return result
 
+def sum_all_values(matrix):
+        return reduce_matrix(
+            matrix, 
+            0, 
+            lambda accumulator, current_value: accumulator + current_value
+        )
+
 def print_by_column(matrix):
         if not matrix:
             return
