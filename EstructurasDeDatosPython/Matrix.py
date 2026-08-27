@@ -21,3 +21,14 @@ def reduce_matrix(matrix, init_value, reduce_func):
             for j in range(len(matrix[i])):
                 result = reduce_func(result, matrix[i][j])
         return result
+
+def print_by_column(matrix):
+        if not matrix:
+            return
+        cols = len(matrix[0])
+        rows = len(matrix)
+        for j in range(cols):
+            print(f"Columna {j}: ", end="")
+            for i in range(rows):
+                print(f"{matrix[i][j]} ", end="")
+            print()
