@@ -39,3 +39,17 @@ def print_by_column(matrix):
             for i in range(rows):
                 print(f"{matrix[i][j]} ", end="")
             print()
+
+matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+
+matrix1 = flip_vertical_matrix(matrix)
+
+print(matrix)
+print()
+print_by_column(matrix)
+print()
+print(matrix1)
